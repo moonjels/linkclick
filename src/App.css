@@ -1,0 +1,167 @@
+/* Main styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #FFE1E0;
+  color: #5D4037; /* Reddish brown text */
+}
+
+.name-input-container, .quiz-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5D4037;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5D4037;
+}
+
+.name-input {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #BCAAA4;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 1rem;
+}
+
+/* Button styles */
+button {
+  background-color: #D7CCC8; /* Light brown */
+  color: #5D4037;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #BCAAA4;
+}
+
+button:disabled {
+  background-color: #EFEBE9;
+  cursor: not-allowed;
+}
+
+.start-button {
+  margin-top: 1rem;
+}
+
+/* Quiz options */
+.single-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.multi-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.option-checkbox {
+  margin-right: 0.5rem;
+}
+
+/* Surprise screen */
+.surprise-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  z-index: 100;
+}
+
+.surprise-screen h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.surprise-subtext {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Dio blessed screen - replaces regular surprise screen */
+.surprise-screen.dio-blessed {
+  background: linear-gradient(135deg, #fba9c5 0%, #d18aa1 50%, #a8526e 100%);
+  color: #872349;
+}
+
+.surprise-screen.dio-blessed h1 {
+  color: #5D4037;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.surprise-screen.dio-blessed .gold-text {
+  color: #862e4e;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.surprise-screen.dio-blessed .blessed-image {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 4px solid #A53860;
+}
+/* Bunny styles */
+.bunny {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: hopAround 15s linear infinite;
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes hopAround {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(100vw, 50vh); }
+  50% { transform: translate(50vw, 80vh); }
+  75% { transform: translate(-20vw, 30vh); }
+  100% { transform: translate(0, 0); }
+}
