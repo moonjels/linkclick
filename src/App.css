@@ -143,7 +143,7 @@ button:disabled {
 }
 
 .surprise-screen.dio-blessed h1 {
-  color: #932121;
+  color: #5D4037;
   font-size: 1.3rem;
   line-height: 1.4;
 }
@@ -161,6 +161,13 @@ button:disabled {
   border-radius: 50%;
   margin-bottom: 1.5rem;
   border: 4px solid #A53860;
+}
+
+/* Added specific style for the Jeno text */
+.surprise-screen h2 {
+  color: #932121;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
 /* Bunny styles */
@@ -225,6 +232,10 @@ button:disabled {
     font-size: 1.2rem;
   }
 
+  .surprise-screen h2 {
+    font-size: 1rem;
+  }
+
   .surprise-screen.dio-blessed h1,
   .surprise-screen.dio-blessed .gold-text {
     font-size: 1.1rem;
@@ -251,6 +262,10 @@ button:disabled {
 @media (max-width: 400px) {
   h1 {
     font-size: 1.1rem;
+  }
+
+  .surprise-screen h2 {
+    font-size: 0.9rem;
   }
 
   button {
