@@ -64,6 +64,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[![Live Demo](https://img.shields.io/badge/demo-live-green)](https://your-live-url)
 
 ### `npm run build` fails to minify
 
